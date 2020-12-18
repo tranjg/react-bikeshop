@@ -1,10 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
 import Paper from "@material-ui/core/Paper";
-import Image from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
 import Orders from "./Orders";
 
 const useStyles = makeStyles((theme) => ({
