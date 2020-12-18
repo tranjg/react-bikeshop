@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header';
+import Home from './Home'
 import { Switch, Route } from "react-router-dom";
+import {Container} from "@material-ui/core";
 
 function App() {
     return (
@@ -8,7 +10,7 @@ function App() {
           <Header />
           <Switch>
               <Route exact path="/">
-                  <h1>Home</h1>
+                  <Home />
               </Route>
               <Route exact path="/schedule">
                   <h1>Schedule</h1>
