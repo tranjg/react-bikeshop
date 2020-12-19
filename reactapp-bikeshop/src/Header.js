@@ -7,8 +7,6 @@ import {Typography} from "@material-ui/core";
 import {Button} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import Menu from '@material-ui/core/Menu';
-import MenuList from "@material-ui/core/MenuList";
-import MenuItem from '@material-ui/core/MenuItem';
 import HomeIcon from '@material-ui/icons/Home';
 import EventIcon from "@material-ui/icons/Event";
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -16,7 +14,7 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import PeopleIcon from '@material-ui/icons/People';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
+    },
+    link: {
+      textDecoration: 'none',
+      color: theme.palette.text.primary
     },
 }));
 
@@ -57,33 +59,41 @@ export default function Header() {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                        <ListItem button component={Link} to="/" onClick={handleClose}>
+                    <Link to="/" className={classes.link}>
+                        <ListItem button onClick={handleClose}>
                         <ListItemIcon>
                             <HomeIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText primary="Home" />
                         </ListItem>
+                    </Link>
 
-                        <ListItem button component={Link} to="/schedule" onClick={handleClose}>
+                    <Link to="/schedule" className={classes.link}>
+                        <ListItem button onClick={handleClose}>
                         <ListItemIcon>
                             <EventIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText primary="View Repair Schedule" />
                         </ListItem>
+                    </Link>
 
-                        <ListItem button component={Link} to="/inventory" onClick={handleClose}>
+                    <Link to="/inventory" className={classes.link}>
+                        <ListItem button onClick={handleClose}>
                         <ListItemIcon>
                             <AssignmentIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText primary="Current Inventory" />
                         </ListItem>
+                    </Link>
 
-                        <ListItem button component={Link} to="/customers" onClick={handleClose}>
+                    <Link to="/customers" className={classes.link}>
+                        <ListItem button onClick={handleClose}>
                         <ListItemIcon>
                             <PeopleIcon fontSize="small" />
                         </ListItemIcon>
                         <ListItemText primary="Our Customers" />
                         </ListItem>
+                    </Link>
 
                 </Menu>
                 <Button color="inherit">Login</Button>
