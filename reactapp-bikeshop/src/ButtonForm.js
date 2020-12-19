@@ -60,7 +60,6 @@ export default function ButtonForm() {
                 InputLabelProps={{
                     shrink: true,
                 }}
-                fullWidth
             />
             </Tooltip>
             <Tooltip title='Select time'>
@@ -75,7 +74,6 @@ export default function ButtonForm() {
                 inputProps={{
                     step: 300, // 5 min
                 }}
-                fullWidth
             />
             </Tooltip>
             <Tooltip title='Select time'>
@@ -90,7 +88,6 @@ export default function ButtonForm() {
                 inputProps={{
                     step: 300, // 5 min
                 }}
-                fullWidth
             />
             </Tooltip>
         </DialogContent>
