@@ -11,7 +11,7 @@ function App() {
         <>
           <Header />
           <Switch>
-              <Route exact path="/react-bikeshop">
+              <Route exact path="/react-bikeshop/">
                   <Home />
               </Route>
               <Route exact path="/schedule">
