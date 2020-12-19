@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Home from './Home';
 import Schedule from './Schedule';
-import { Switch, Route } from 'react-router-dom';
+import {  HashRouter, Switch, Route } from 'react-router-dom';
 import Inventory from './Inventory';
 import Customers from './Customers';
 
@@ -10,20 +10,22 @@ function App() {
     return (
         <>
           <Header />
+          <HashRouter>
           <Switch>
-              <Route exact path="/react-bikeshop/">
+              <Route exact path="/">
                   <Home />
               </Route>
-              <Route exact path="/react-bikeshop/schedule/">
+              <Route exact path="/schedule">
                   <Schedule />
               </Route>
-              <Route exact path="/react-bikeshop/inventory/">
+              <Route exact path="/inventory">
                   <Inventory />
               </Route>
-              <Route exact path="/react-bikeshop/customers/">
+              <Route exact path="/customers">
                   <Customers />
               </Route>
           </Switch>
+          </HashRouter>
         </>
     )
 
