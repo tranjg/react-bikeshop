@@ -1,34 +1,26 @@
 import React from 'react';
+import {  HashRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Schedule from './Schedule';
-import {  HashRouter, Switch, Route } from 'react-router-dom';
 import Inventory from './Inventory';
 import Customers from './Customers';
 
-function App() {
+export default function App() {
     return (
         <>
+        <HashRouter>
           <Header />
-          <HashRouter>
           <Switch>
-              <Route exact path="/">
-                  <Home />
-              </Route>
-              <Route exact path="/schedule">
-                  <Schedule />
-              </Route>
-              <Route exact path="/inventory">
-                  <Inventory />
-              </Route>
-              <Route exact path="/customers">
-                  <Customers />
-              </Route>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/schedule" component={Schedule}/>
+              <Route exact path="/inventory" component={Inventory}/>
+              <Route exact path="/customers" component={Customers}/>
           </Switch>
-          </HashRouter>
+        </HashRouter>
         </>
     )
 
 }
 
-export default App;
+
