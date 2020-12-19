@@ -26,6 +26,7 @@ export default function Home() {
     return (
         <div>
             <Grid container spacing={3}>
+                {/* Recent Orders */}
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <Orders />
