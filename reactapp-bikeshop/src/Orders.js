@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -21,18 +19,9 @@ const rows = [
     createData(4, '11 Dec, 2020', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
 ];
 
-function preventDefault(event) {
-    event.preventDefault();
-}
 
-const useStyles = makeStyles((theme) => ({
-    seeMore: {
-        marginTop: theme.spacing(3),
-    },
-}));
 
 export default function Orders() {
-    const classes = useStyles();
     return (
         <React.Fragment>
             <Title>Recent Orders</Title>

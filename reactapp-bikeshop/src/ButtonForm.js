@@ -19,12 +19,6 @@ export default function ButtonForm() {
         setOpen(false);
     };
 
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
-
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-    };
-
     return (
         <>
         <Button variant="contained" color="primary" onClick={handleClickOpen}>
