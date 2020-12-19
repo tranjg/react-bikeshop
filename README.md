@@ -6,4 +6,4 @@ Technologies used:
 * material-table
 * React Router
 
-A front-end dashboard for a local bikeshop: Joe's Bike Shop.
+A front-end dashboard for a fictional bikeshop: Joe's Bike Shop.
