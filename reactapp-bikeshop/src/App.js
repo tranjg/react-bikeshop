@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './Header';
-import Home from './Home'
+import Home from './Home';
+import Schedule from './Schedule';
 import { Switch, Route } from "react-router-dom";
 import {Container} from "@material-ui/core";
+
 
 function App() {
     return (
@@ -13,7 +15,7 @@ function App() {
                   <Home />
               </Route>
               <Route exact path="/schedule">
-                  <h1>Schedule</h1>
+                  <Schedule />
               </Route>
               <Route exact path="/inventory">
                   <h1>Inventory</h1>
