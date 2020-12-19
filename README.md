@@ -2,7 +2,8 @@
 
 Technologies used:
 * React
-* material-ui
+* Material-UI
 * material-table
+* React Router
 
 A front-end dashboard for a local bikeshop: Joe's Bike Shop.
