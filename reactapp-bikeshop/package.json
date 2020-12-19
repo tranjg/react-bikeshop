@@ -2,7 +2,7 @@
   "name": "react-bikeshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tranjg/react-bikeshop",
+  "homepage": "http://tranjg.github.io/react-bikeshop",
   "dependencies": {
     "@date-io/date-fns": "^2.10.6",
     "@devexpress/dx-react-core": "^2.7.3",
