@@ -6,6 +6,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import TextField from "@material-ui/core/TextField";
 import DialogActions from "@material-ui/core/DialogActions";
+import {Tooltip} from "@material-ui/core";
 
 export default function ButtonForm() {
     const [open, setOpen] = React.useState(false);
@@ -44,15 +45,14 @@ export default function ButtonForm() {
                 fullWidth
             />
             <TextField
-                autoFocus
                 margin="dense"
                 id="filled-required"
                 label="Bicycle Type"
                 type="string"
                 fullWidth
             />
+            <Tooltip title='Select date'>
             <TextField
-                autoFocus
                 margin="dense"
                 id="date"
                 label="Appointment Date"
@@ -62,8 +62,9 @@ export default function ButtonForm() {
                 }}
                 fullWidth
             />
+            </Tooltip>
+            <Tooltip title='Select time'>
             <TextField
-                autoFocus
                 margin="dense"
                 id="time"
                 label="Start Time"
@@ -76,8 +77,9 @@ export default function ButtonForm() {
                 }}
                 fullWidth
             />
+            </Tooltip>
+            <Tooltip title='Select time'>
             <TextField
-                autoFocus
                 margin="dense"
                 id="time"
                 label="End Time"
@@ -90,6 +92,7 @@ export default function ButtonForm() {
                 }}
                 fullWidth
             />
+            </Tooltip>
         </DialogContent>
         <DialogActions>
             <Button onClick={handleClose} color="primary">
