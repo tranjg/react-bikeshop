@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from '@material-ui/core/styles';
 import Orders from "./Orders";
+import Deposits from "./Deposits";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,6 +31,12 @@ export default function Home() {
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
                         <Orders />
+                    </Paper>
+                </Grid>
+                {/* Recent Deposits */}
+                <Grid item xs={12} md={4} lg={3}>
+                    <Paper className={classes.paper}>
+                        <Deposits />
                     </Paper>
                 </Grid>
             </Grid>
