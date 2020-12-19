@@ -14,13 +14,13 @@ function App() {
               <Route exact path="/react-bikeshop/">
                   <Home />
               </Route>
-              <Route exact path="/react-bikeshop//schedule">
+              <Route exact path="/react-bikeshop/schedule">
                   <Schedule />
               </Route>
-              <Route exact path="/react-bikeshop//inventory">
+              <Route exact path="/react-bikeshop/inventory">
                   <Inventory />
               </Route>
-              <Route exact path="/react-bikeshop//customers">
+              <Route exact path="/react-bikeshop/customers">
                   <Customers />
               </Route>
           </Switch>
